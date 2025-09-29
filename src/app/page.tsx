@@ -4,8 +4,6 @@ import { NewsPanel } from "@/components/news-panel";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-
       {/* Main Content */}
       <main className="pt-16">
         {/* Hero Section */}
@@ -16,7 +14,6 @@ export default function HomePage() {
             </h1>
           </div>
         </section>
-
         <NewsPanel />
       </main>
     </div>

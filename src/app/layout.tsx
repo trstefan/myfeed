@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "MyFeed",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
+
         <body>
           <ThemeProvider
             attribute="class"
@@ -24,7 +26,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <Navbar />
+            <main>{children}</main>
           </ThemeProvider>
         </body>
       </html>

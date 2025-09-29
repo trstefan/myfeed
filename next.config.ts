@@ -1,7 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ["ichef.bbci.co.uk"], // allow BBC image host
+    domains: ["img.lemde.fr", "ichef.bbci.co.uk"],
   },
 };
 
